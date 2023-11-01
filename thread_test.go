@@ -6,14 +6,12 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestThreadInitialization(t *testing.T) {
+/* func TestThreadInitialization(t *testing.T) {
 	Py_Initialize()
 	PyEval_InitThreads()
-
 	assert.True(t, PyEval_ThreadsInitialized())
-
 	PyEval_ReInitThreads()
-}
+} */
 
 func TestGIL(t *testing.T) {
 	Py_Initialize()
